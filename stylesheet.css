@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: bisque;
 }
 
 .container {
@@ -13,7 +13,7 @@ body {
 
 .column {
     flex: 1;
-    background: #ffffff;
+    background: rgb(208, 122, 122);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -85,4 +85,18 @@ button:hover {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 999;
+}
+
+.title {
+    font-size: 20px;
+    text-align: center;
+    /* justify-content: space-around; */
+    /* margin-bottom: 20px; */
+}
+
+.title-class {
+    display: inline-block;
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 20px;
 }
