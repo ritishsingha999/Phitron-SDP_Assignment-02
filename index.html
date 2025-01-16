@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Drink Card</title>
+    <style></style>
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="column">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search for a drink...">
+                <button id="searchButton">Search</button>
+            </div>
+
+            <div id="drinkCard" class="card">
+                <h2 id="drinkName">Margarita</h2>
+                <p><strong>Category:</strong> Cocktail</p>
+                <p><strong>Instructions:</strong> Rub rim of glass with lime.</p>
+                <button class="add-btn">Add to Group</button>
+                <button class="details-btn">Details</button>
+            </div>
+
+            <p id="notFound" style="color: red; display: none;">No drink found. Please try a different search.</p>
+        </div>
+
+        <div class="column">
+            <h3>Group List</h3>
+            <ul id="groupList"></ul>
+            <p id="drinkCount">Drinks in group: 0</p>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal" id="detailsModal">
+        <h2>Drink Details</h2>
+        <ul id="modalContent"></ul>
+        <button id="closeModal">Close</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
